@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="mydiv"></div>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./react.development.js"></script>
+    <script src="./react-dom.development.js"></script>
+    <script src="./babel.min.js"></script>
+    <script src="./popper.js"></script>
+    <script src="./react-router-dom.js"></script>
+
+
+    <script type="text/babel">
+        // objeto <Hello />
+        function Hello() {
+            return <h1>Hello</h1>;
+        }
+    
+        // objeto <Nome />
+        function Nome() {
+            return <h2>enzo</h2>;
+        }
+
+        // objeto <Sobrenome />
+        function Sobrenome() {
+            return <h2>takashi</h2>;
+        }
+
+        // objeto <Endereco />
+        function Endereco() {
+            return <h2>sesc</h2>;
+        }
+    
+        //variavel Hello2
+        const Hello2 = (
+            <h2>Hello 2</h2>
+        );
+    
+        const container = document.getElementById('mydiv');
+        const root = ReactDOM.createRoot(container);
+        root.render(
+        <React.StrictMode>
+            <Nome />
+            <Sobrenome />
+            <Endereco />
+        </React.StrictMode>
+        );
+        
+    </script>
+
+</body>
+
+</html>
